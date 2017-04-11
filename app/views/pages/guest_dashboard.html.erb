@@ -1,0 +1,55 @@
+<h1>Guest Dashboard</h1>
+
+<h3>Ready for Payment</h3>
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+		<tr>
+			<th>Start</th>
+			<th>End</th>
+			<th>Cost</th>
+			<th>Title</th>
+			<th></th>
+		</tr>
+		</div>
+
+		<table class="table">
+		<% @approved_bookings.each do |booking| %>
+			<tr>
+				<td><%= booking.start_date %></td>
+				<td><%= booking.end_date %></td>
+				<td><%= number_to_currency(booking.room.price) %></td>
+				<td><%= booking.room.title %></td>
+				<td><%= render 'partials/stripe', booking: booking %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>
+
+
+<h3>Pending Approval</h3>
+
+<h3>Already paid</h3>
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+		<tr>
+			<th>Start</th>
+			<th>End</th>
+			<th>Cost</th>
+			<th>Title</th>
+
+		</tr>
+		</div>
+
+		<table class="table">
+		<% @paid_booking.each do |booking| %>
+			<tr>
+				<td><%= booking.start_date %></td>
+				<td><%= booking.end_date %></td>
+				<td><%= number_to_currency(booking.room.price) %></td>
+				<td><%= booking.room.title %></td>
+
+			</tr>
+		<% end %>
+	</table>

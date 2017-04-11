@@ -1,0 +1,92 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header_home {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+
+}
+
+.name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #EF6657;
+  font-size: 50px;
+}
+
+.search_bar {
+  margin-top: 80px;
+  margin-left: 30%;
+}
+
+.flex-container {
+	display: inline-flex;
+  // float: right;
+  // align-items: center;
+
+}
+
+.flex-item1 {
+  background-image: url(http://cdn.decoist.com/wp-content/uploads/2012/07/English-Countryside-House.jpg);
+  background-size: cover;
+  padding: 5px;
+  width: 280px;
+  height: 350px;
+  margin-top: 100px;
+  margin-right: 25px;
+
+}
+
+.flex-item2 {
+  background-image: url(http://www.shortandsweetnyc.com/wp-content/uploads/2015/03/4-Ways-To-Protect-Your-Home-In-New-York-City.jpg);
+  background-size: cover;
+  padding: 5px;
+  width: 280px;
+  height: 350px;
+  margin-top: 100px;
+  margin-right: 25px;
+}
+
+.flex-item3{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/71/Chavner_Family_House.jpg);
+  background-size: cover;
+  padding: 5px;
+  width: 280px;
+  height: 350px;
+  margin-top: 100px;
+  margin-right: 25px;
+}
+
+.flex-item4{
+  background-image: url("http://pop.h-cdn.co/assets/cm/15/05/54ca676358702_-_tree-house-2-470-1108.jpg");
+  background-size: cover;
+  padding: 5px;
+  width: 280px;
+  height: 350px;
+  margin-top: 100px;
+
+}
+.flex_text1 {
+  width: 280px;
+  height: 25px;
+  margin-top: 150px;
+  
+}
+.flex_text2 {
+  width: 280px;
+  height: 25px;
+  margin-top: 150px;
+}
+.flex_text3 {
+  width: 280px;
+  height: 25px;
+  margin-top: 150px;
+}
+.flex_text4 {
+  width: 280px;
+  height: 25px;
+  margin-top: 150px;
+  border: 2px;
+}
